@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-# Decision tree - example Agreeableness (independent_var) and Product descriptions (dependent_var)
+# Decision tree - X (independent_var) and y (dependent_var)
 
 
 # Importing the libraries
@@ -15,8 +15,8 @@ df.describe()
 
 
 # Assigning the input and output values resp. dividing data into attributes and labels
-y = df.iloc[0:, 1].values  # Product descriptions (dep_v)
-X = df.iloc[0:, 35].values # Agreeableness (indep_v)
+y = df.iloc[0:, 1].values  # (dep_v)
+X = df.iloc[0:, 35].values # (indep_v)
 
 
 y = np.array(y).astype('float')
